@@ -1,0 +1,71 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+ul li{
+	list-style: none;
+}
+form ul li{
+	padding: 5px 10px;
+	margin: 5px;
+}
+form ul li label{
+	padding-right: 10px;
+}
+form ul li input,form ul li textarea{
+	width: 100%;
+	padding: 5px 10px;
+}
+input[type=checkbox] {
+    padding-left:5px;
+    padding-right:5px;
+
+    border: 1px solid #ccc;
+
+    /* background-color:#0b0095; */
+    color:#FFF;
+    white-space: nowrap;
+    overflow:hidden;
+
+    width:15px;
+    height:15px;
+}
+
+input[type=checkbox]:checked {
+    background-color:#000;
+    border-left-color:#06F;
+    border-right-color:#06F;
+}
+
+input[type=checkbox]:hover {
+    box-shadow:0px 0px 10px #1300ff;
+}
+.box-right {
+    border: 1px solid #e8e8e8;
+    padding: 0 10px 20px;
+    margin-bottom: 20px;
+}
+h2.box-title {
+    font-size: 20px;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 10px;
+}
+.box-catagory ul{
+	max-height: 200px;
+	overflow-y: auto;
+}
+.box-catagory ul li{
+
+}
+.img-gallery{
+    position: relative;
+    display: inline-block;
+}
+.img-gallery a.close{
+    position: absolute;
+    right: 1px;
+    top: 1px;
+}

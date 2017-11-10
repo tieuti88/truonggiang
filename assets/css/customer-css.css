@@ -1,0 +1,15 @@
+.permission .form-group label{
+  width: 15%;
+  margin-right: 20px;
+}
+form i.required{
+  color: #dd4b39;
+}
+div#modal-detail .box-body label:after {
+    content: ":";
+    float: right;
+    margin-right: 20px;
+}
+div#modal-detail .box-body label {
+    width: 30%;
+}

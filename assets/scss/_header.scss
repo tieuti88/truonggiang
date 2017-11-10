@@ -1,0 +1,114 @@
+.header-site{
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 9999;
+  transition: all 0.5s ease;
+  .logo{
+    margin: 0;
+    float: left;
+  }
+  .scrolled &{
+    background-color: $c-blue;
+    padding: 5px 0;
+    @include box-shadow();
+  }
+}
+.navigation{
+  float: right;
+  text-align: right;
+  padding-top: 15px;
+  .main-menu{
+    font-family: $font-myriad;
+    padding: 0;
+    margin: 0;
+    & > li{
+      list-style-type: none;
+      display: inline-block;
+      font-weight: bold;
+      padding: 10px 20px 5px;
+      position: relative;
+      transition: all 0.5s ease;
+      & > a{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $c-white;
+        display: inline-block;
+        border-bottom: 2px solid transparent;
+        padding-bottom: 5px;
+      }
+      &:last-child{
+        padding-right: 0;
+      }
+      &.active,
+      &:hover{
+        & > a{
+          border-color: $c-white;
+        }
+      }
+    }
+  }
+}
+.mb-menu{
+  display: none;
+  .line{
+    display: block;
+    background-color: $c-white;
+    height: 4px;
+    width: 34px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 1199px) {
+  .navigation{
+    .main-menu {
+      & > li {
+        padding: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 1023px) {
+  .logo{
+    width: 30%;
+  }
+  .navigation{
+    width: 70%;
+  }
+}
+@media (max-width: 991px) {
+  .mb-menu{
+    display: inline-block;
+  }
+  .header-site{
+    position: relative;
+    background-color: $c-blue;
+  }
+  .navigation{
+    .main-menu{
+      display: none;
+      position: absolute;
+      width: 100%;
+      top: 100%;
+      left: 0;
+      text-align: center;
+      background-color: rgba(38,157,211,0.8);
+      & > li{
+        width: 100%;
+        .dropdown-menu{
+          position: static;
+          float: none;
+        }
+        &.active,
+        &:hover{
+          background-color: rgba(255,255,255,0.8);
+          & > a{
+            color: $t-blue;
+            border-color: $c-blue;
+          }
+        }
+      }
+    }
+  }
+}

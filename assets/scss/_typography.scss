@@ -1,0 +1,72 @@
+/*my style*/
+@include font-face('MyriadPro','Myriad-Web-Pro',normal,normal,'');
+@include font-face('MyriadPro','Myriad-Web-Pro-Bold_31660',bold,normal,'');
+@include font-face('MyriadPro','Myriad-Web-Pro-Italic_31663',normal,italic,'');
+@include font-face('MyriadPro','MyriadPro-Semibold',600,normal,'');
+@include font-face('MyriadPro-Cond','Myriad-Web-Pro-Condensed_31662',normal,normal,'');
+@include font-face('MyriadPro-Cond','Myriad-Web-Pro-Condensed-Italic_31661',normal,italic,'');
+@include font-face('MyriadPro-Semi','MyriadPro-SemiCn_0',normal,normal,'');
+
+
+@include font-face('Open Sans','OpenSans-Light-webfont',300,italic,'');
+@include font-face('Open Sans','OpenSans-Regular-webfont',normal,normal,'');
+@include font-face('Open Sans','OpenSans-Bold-webfont',bold,normal,'');
+@include font-face('Open Sans','OpenSans-Semibold-webfont',600,normal,'');
+
+@include font-face('SourceSansPro','sourcesanspro-light-webfont',300,normal,'');
+@include font-face('SourceSansPro','sourcesanspro-regular-webfont',normal,normal,'');
+@include font-face('SourceSansPro','sourcesanspro-bold-webfont',bold,normal,'');
+
+@include font-face('proxima-nova','ProximaNovaSoft-Bold',bold,normal,'');
+
+@include font-face('proxima-nova','ProximaNovaSoft-Medium',500,normal,'');
+@include font-face('proxima-nova','ProximaNovaSoft-Semibold',600,normal,'');
+@include font-face('proxima-nova','mark_simonson_-_proxima_nova_light-webfont',normal,normal,'');
+.size10{ font-size: 10px; }
+.size11{ font-size: 11px; }
+.size12{ font-size: 12px; }
+.size13{ font-size: 13px; }
+.size14{ font-size: 14px; }
+.size16{ font-size: 16px; }
+.size18{ font-size: 18px; }
+.size20{ font-size: 20px; }
+.size24{ font-size: 24px; }
+.size30{ font-size: 30px; }
+.size36{ font-size: 36px; }
+.size48{ font-size: 48px; }
+.size60{ font-size: 60px; }
+.size72{ font-size: 72px; }
+.size90{ font-size: 90px; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  margin-top: 0;
+}
+
+*{
+  &:focus,
+  &:hover{
+    outline: none!important;
+  }
+}
+html,
+body{
+  font-family: $font-proxima-nova;
+  font-weight: normal;
+  font-style: normal;
+  color: $t-grey;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a{
+  color: #006180;
+  &:hover, &:focus{
+  }
+}
+img{
+  max-width: 100%;
+}

@@ -1,0 +1,51 @@
+.btn{
+  padding: 18px 45px;
+  line-height: 1;
+  display: inline-block;
+  font-size: 35px;
+  @include box-shadow();
+  @include border-radius-circle(10px);
+
+  transition: all 0.2s linear;
+  &-detail{
+    font-family: $font-myriad;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    background-color: $t-blue;
+    color: $c-white;
+    padding: 8px 20px;
+    line-height: 1;
+
+    @include border-radius-circle(5px);
+    @include box-shadow();
+  }
+  &-blue{
+    font-family: $font-myriad;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: $t-blue;
+    color: $c-white;
+    display: inline-block;
+    margin-bottom: 60px;
+    &:hover,
+    &:focus{
+      background-color: $bg-blue-tag;
+      color: $c-white;
+    }
+  }
+  &-white{
+    background-color: white;
+    color: #269dd3;
+    &:hover,
+    &:focus{
+      opacity: 0.8;
+    }
+  }
+  @media (max-width: 767px){
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,1 @@
+$("a.iframe-btn").fancybox();
